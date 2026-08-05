@@ -1,0 +1,5 @@
+Section 5. Personal data used to operate the system shall be redacted of directly
+identifying information before processing.
+Section 6. Secrets and credentials must never be transmitted to a third-party model.
+Section 7. Only data strictly necessary for the stated purpose may be processed,
+and processing requires the data subject's consent.

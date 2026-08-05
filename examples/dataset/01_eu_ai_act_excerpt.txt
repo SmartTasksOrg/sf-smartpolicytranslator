@@ -1,0 +1,8 @@
+Article 9. Providers of high-risk AI systems must establish and document a risk
+management system, and must perform a risk assessment before the system is placed
+on the market.
+Article 13. High-risk AI systems must be designed so that their operation is
+sufficiently transparent, and the provider shall disclose to users that they are
+interacting with an AI system.
+Article 14. High-risk AI systems must allow effective human oversight, including
+the ability for a person to override an automated decision.

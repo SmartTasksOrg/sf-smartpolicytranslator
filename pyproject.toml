@@ -1,0 +1,10 @@
+[project]
+name = "smartpolicytranslator"
+version = "1.0.0"
+description = "Translate natural-language regulation into REAL, schema-conformant IAIso policy files."
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.setuptools.packages.find]
+where = ["src"]

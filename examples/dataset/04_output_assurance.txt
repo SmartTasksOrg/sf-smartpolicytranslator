@@ -1,0 +1,3 @@
+Clause A. Model outputs used in a compliance decision must be verified for accuracy.
+Clause B. A receipt of that verification should be retained in an immutable audit log.
+Clause C. Every governed action must record provenance.

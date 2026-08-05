@@ -1,0 +1,10 @@
+{
+  "name": "@smarttasks/smartpolicytranslator-client",
+  "version": "1.0.0",
+  "description": "Node/TypeScript client for SmartPolicyTranslator — regulation → IAIso policy",
+  "license": "Apache-2.0", "type": "module",
+  "main": "dist/index.js", "types": "dist/index.d.ts",
+  "scripts": { "build": "tsc" },
+  "peerDependencies": { "iaiso-node": "*" },
+  "devDependencies": { "typescript": "^5.4.0" }
+}

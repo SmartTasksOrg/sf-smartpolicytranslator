@@ -1,0 +1,3 @@
+Provision 1. Systems that automate roles should monitor and report workforce-impact
+indicators.
+Provision 2. Affected staff may request an explanation of automated decisions.

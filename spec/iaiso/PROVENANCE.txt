@@ -1,0 +1,10 @@
+Vendored from github.com/SmartTasksOrg/IAISO
+  IAIso-v5.0/core/spec/policy/  (spec version 1.1, repo 7272c11)
+
+sha256:
+  9b0a39701ab163f8ea700ee1b0c6e8645c990acf9532e1f27dc0d1dce9a697b9  policy.schema.json
+  6ec34a0e1241b07c1c810aae8f7a9ec4751a716760aa609f9c631325b7f1683d  vectors.json
+  1acc2fd6acbb45233b3bcfba4783cd9033cf31854fea2b115c4b209c6d6f6d42  POLICY_SPEC.md  (source: core/spec/policy/README.md)
+
+These files define the IAIso policy language this repo emits and validates against.
+Do not edit here; re-copy from the IAIso repo and re-run tests to update.

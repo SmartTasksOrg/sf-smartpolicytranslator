@@ -1,0 +1,6 @@
+{
+  "name": "smarttasks/smartpolicytranslator-client",
+  "description": "PHP client for SmartPolicyTranslator — regulation -> IAIso policy",
+  "license": "Apache-2.0",
+  "autoload": { "psr-4": { "SmartTasks\\Spt\\": "src/" } }
+}

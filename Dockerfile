@@ -1,0 +1,9 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+ENV PYTHONPATH=/app/src SPT_SQLITE_PATH=/data/spt.db
+VOLUME ["/data"]
+EXPOSE 8000
+CMD ["uvicorn", "smartpolicytranslator.api:app", "--host", "0.0.0.0", "--port", "8000"]

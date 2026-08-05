@@ -1,0 +1,13 @@
+Article 1. Providers of high-risk AI systems must perform a documented risk
+assessment before the system is placed on the market.
+Article 2. Personal data used to operate the system shall be redacted of
+directly identifying information, and secrets must never be sent to a
+third-party model.
+Article 3. Where an automated decision produces a legal effect on a person, the
+provider must offer human review of that decision.
+Article 4. The provider shall disclose to affected users that they are
+interacting with an AI system.
+Article 5. Model outputs used in a compliance decision must be verified for
+accuracy, and a receipt of that verification should be retained in an audit log.
+Article 6. Prompts sent to a model must be inspected for injection attempts.
+Article 7. Access to models must be routed through an authorization gateway.

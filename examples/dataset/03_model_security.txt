@@ -1,0 +1,5 @@
+Rule 1. Prompts sent to a model must be inspected for injection attempts before
+dispatch.
+Rule 2. Access to models must be routed through an authorization gateway that
+enforces an allowlist.
+Rule 3. Requests to models must be rate limited.

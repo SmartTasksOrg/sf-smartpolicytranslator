@@ -1,0 +1,2 @@
+Guideline 1. Providers may log request metadata for analytics.
+Guideline 2. Teams can review aggregate usage dashboards.
