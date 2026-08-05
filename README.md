@@ -68,6 +68,32 @@ python3 -m pytest tests/ -q     # translation + REAL IAIso schema/vector conform
 
 These run on the standard library alone — no `iaiso` package or network required.
 
-## License
 
-Apache-2.0. IAIso: https://github.com/SmartTasksOrg/IAIso
+## Who's behind this
+
+- **Roen Branham** — CEO & AI Strategy Architect · CISSP-certified AI, security & governance architect; author of IAIso and sole inventor of the Z4 Semantic Fabric patent application. [LinkedIn](https://www.linkedin.com/in/roen-branham-167ab29/)
+- **Le Vu Tanh** — CTO & Core Engineering Lead · Chief architect of the Cortex engine; large-scale system reliability and low-latency infrastructure — the engineer who ships what gets architected. [LinkedIn](https://www.linkedin.com/in/lee-thanh-76aa8ba0/)
+
+The team behind IAIso & SmartTasks: a CISSP-certified security & governance architect
+and a large-scale systems engineer — 20+ years shipping secure, AI-driven platforms for
+regulated, blue-chip environments (Allianz, BMW, Rolls-Royce, Heidenhain).
+
+<!-- SMARTTASKS-MODELS:START -->
+## Runs on governed local models
+
+Structured, machine-readable **scorecards** make model choice precise instead of guesswork.
+
+This tool is local-first, so pair it with models you can actually vet. **SmartTasks** publishes 21+ governance-validated GGUF builds on Hugging Face — each with a machine-readable **scorecard** (capability tiers L1 Layman → L5 Agentic, IAIso conformance invariants (pass/warn/fail), OWASP-mapped garak red-team, transparency probes (viewpoint-alignment / over-refusal), and per-file SHA-256). Gate model selection on evidence, not vibes — and every finding, including warnings, is published in full.
+
+→ **[SmartTasks on Hugging Face](https://huggingface.co/smarttasks)** · [Qwen3.6-27B](https://huggingface.co/smarttasks/Qwen3.6-27B-GGUF) (L5 agentic) · [react-agent-coder-llama-3.1-8b](https://huggingface.co/smarttasks/react-agent-coder-llama-3.1-8b-GGUF) (agentic coder) · [gpt-oss-20b](https://huggingface.co/smarttasks/gpt-oss-20b-GGUF) (open reasoning)
+<!-- SMARTTASKS-MODELS:END -->
+
+## Get in touch
+
+- **Companies & enterprises:** [enterprise@smarttasks.cloud](mailto:enterprise@smarttasks.cloud) — we help
+  teams integrate SmartPrompt + IAIso into their architecture so governance and
+  audit-readiness become a byproduct of how they already work.
+- **The standard:** [IAIso](https://github.com/SmartTasksOrg/IAIso) · [iaiso.org](https://iaiso.org)
+- **The product:** [SmartTasks.cloud](https://smarttasks.cloud)
+
+Built by **SmartTasks Lab**. Apache-2.0. Contributions welcome.
