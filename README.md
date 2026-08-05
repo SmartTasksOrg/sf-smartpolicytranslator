@@ -63,13 +63,10 @@ SmartPolicyTranslator **produces** IAIso policy; IAIso **enforces** it.
 ## Tests
 
 ```bash
-python3 -m pytest tests/ -q                 # public: translation + IAIso vector conformance
-python3 -m pytest ../private/tests/ -q      # private: core + LM Studio LLM framework
+python3 -m pytest tests/ -q     # translation + REAL IAIso schema/vector conformance
 ```
 
-The private suite includes an LM Studio LLM test framework (offline-deterministic
-always-on; a live tier gated behind `SPT_LLM_LIVE=1` that self-skips if the box is
-unreachable) — the same pattern the other Smart-family repos use.
+These run on the standard library alone — no `iaiso` package or network required.
 
 ## License
 
