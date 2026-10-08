@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	spt "github.com/SmartTasksOrg/smartpolicytranslator-go"
+	spt "github.com/SmartTasksOrg/sf-smartpolicytranslator/ports/go"
 )
 
 func main() {

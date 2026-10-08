@@ -21,7 +21,7 @@ go mod tidy
 ## 3. Translate regulation → IAIso policy
 
 ```go
-import spt "github.com/SmartTasksOrg/smartpolicytranslator-go"
+import spt "github.com/SmartTasksOrg/sf-smartpolicytranslator/ports/go"
 
 c := spt.New("http://localhost:8000")
 res, err := c.Translate("Personal data must be redacted.", false, "lmstudio")

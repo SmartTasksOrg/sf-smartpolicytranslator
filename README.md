@@ -18,6 +18,32 @@ official test vectors are vendored under `spec/iaiso/` directly from
 (`IAIso-v5.0`). Every emitted policy is validated against them, and the loader
 passes **all of IAIso's own policy test vectors**.
 
+## Install
+
+SmartPolicyTranslator is not published on PyPI or any other package registry yet. Until
+this section says otherwise, a package called `sf-smartpolicytranslator` on any registry
+is not ours, and neither is `smartpolicytranslator`.
+
+Install from a clone (Python 3.10 or later):
+
+```bash
+git clone https://github.com/SmartTasksOrg/sf-smartpolicytranslator
+cd sf-smartpolicytranslator
+python -m venv .venv
+. .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+python -m pip install .
+python -m sf_smartpolicytranslator.cli examples/sample_regulation.txt
+```
+
+## Status
+
+- **Version 1.0.0, experimental.** Translates regulation text into IAIso v1 policy files that are validated against the IAIso schema and test vectors vendored in `spec/iaiso/`; 4 tests.
+- **Published:** nowhere yet; install from a clone (above).
+- **Tested:** the 4 tests in `tests/` on Python 3.12, Linux, on every push to main and every pull request (`.github/workflows/ci.yml`).
+- **Not tested:** Windows and macOS; the LLM-assisted parsing path; Python versions other than 3.12.
+- **Ports:** The client ports in `ports/` have no automated check; none is published on a registry.
+- **Security review:** none independent. Report vulnerabilities as described in [SECURITY.md](SECURITY.md).
+
 ## Ready to run
 
 The core needs **zero third-party packages** (stdlib only):
@@ -42,7 +68,7 @@ data/access obligations (in IAIso's scope grammar, e.g. `data.pii.read`,
 `model.invoke`, `decision.override`), a tightened `pressure` posture
 (`escalation_threshold` lowered, `post_release_lock` on), a shorter consent TTL,
 and a `metadata.provenance[]` trail mapping each choice to its clause. A permissive
-regulation yields a permissive policy. See `private/notes/MAPPING.md`.
+regulation yields a permissive policy.
 
 ## Integrations & ports
 
