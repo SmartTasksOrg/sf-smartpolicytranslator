@@ -10,7 +10,7 @@ IAIso policy, so you can translate regulation inside any n8n workflow.
 npm init -y
 npm install n8n-workflow typescript --save-dev
 # copy SmartPolicyTranslator.node.ts into ./nodes/ and build:
-npx tsc SmartPolicyTranslator.node.ts --outDir dist
+npx -p typescript tsc SmartPolicyTranslator.node.ts --outDir dist
 # point n8n at it:
 export N8N_CUSTOM_EXTENSIONS="$(pwd)/dist"
 n8n start
@@ -33,7 +33,8 @@ Output item: `{ policy_id, iaiso_policy, valid, validation_errors, ... }`.
 
 Add a following node that ships `iaiso_policy` into your IAIso deployment (e.g. an
 HTTP Request node to your enforcement service, or a Function node using
-`iaiso-node`). SmartPolicyTranslator produces; IAIso enforces.
+the IAIso Node SDK from source, `IAIso-v5.0/core/iaiso-node` in the IAISO repository).
+SmartPolicyTranslator produces; IAIso enforces.
 
 ## One-command end-to-end demo
 

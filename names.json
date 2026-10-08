@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "repo": "SmartTasksOrg/smartpolicytranslator",
+  "checked_on": "2026-10-08",
+  "names": [
+    {
+      "registry": "pypi",
+      "name": "smartpolicytranslator",
+      "registered": false,
+      "workflow": "release.yml",
+      "note": "first release pending; README in state A"
+    },
+    {
+      "registry": "pypi",
+      "name": "iaiso",
+      "registered": true,
+      "note": "IAIso Python SDK, published from SmartTasksOrg/IAISO; ownership confirmed by the maintainers 2026-10-08"
+    },
+    {
+      "registry": "npm",
+      "name": "iaiso-node",
+      "registered": false,
+      "note": "not a published name; never depend on it"
+    },
+    {
+      "registry": "npm",
+      "name": "@smarttasks/smartpolicytranslator-client",
+      "registered": false
+    }
+  ],
+  "third_party": {
+    "pypi": [
+      "pip",
+      "pytest"
+    ],
+    "npm": [
+      "react",
+      "typescript",
+      "flowise-components",
+      "n8n-workflow"
+    ]
+  },
+  "local_images": [],
+  "git_owners": [
+    "SmartTasksOrg"
+  ],
+  "exclude_paths": []
+}
