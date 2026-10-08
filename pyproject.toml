@@ -1,5 +1,5 @@
 [project]
-name = "smartpolicytranslator"
+name = "sf-smartpolicytranslator"
 version = "1.0.0"
 description = "Translate natural-language regulation into REAL, schema-conformant IAIso policy files."
 requires-python = ">=3.10"

@@ -24,11 +24,11 @@ The core needs **zero third-party packages** (stdlib only):
 
 ```bash
 export PYTHONPATH=src
-python3 -m smartpolicytranslator.cli examples/sample_regulation.txt
+python3 -m sf_smartpolicytranslator.cli examples/sample_regulation.txt
 # → a valid IAIso policy: version "1", enforcement_mode, consent scopes, pressure…
 
 # LLM-assisted parsing (LM Studio / Ollama / llama.cpp):
-python3 -m smartpolicytranslator.cli --llm --provider lmstudio examples/sample_regulation.txt
+python3 -m sf_smartpolicytranslator.cli --llm --provider lmstudio examples/sample_regulation.txt
 
 # REST service:
 bash scripts/run.sh          # → http://localhost:8000/docs   (or: docker build/run)
@@ -57,7 +57,7 @@ SmartPolicyTranslator **produces** IAIso policy; IAIso **enforces** it.
   mirroring every language IAIso itself ships (plus React and C/C++) so a policy can
   be generated and enforced in the language of your IAIso deployment. See
   `ports/README.md` for the port↔`iaiso-*` map.
-- **Local LLMs** — `src/smartpolicytranslator/llm.py`: one OpenAI-compatible client
+- **Local LLMs** — `src/sf_smartpolicytranslator/llm.py`: one OpenAI-compatible client
   for LM Studio, Ollama, and llama.cpp.
 
 ## Tests

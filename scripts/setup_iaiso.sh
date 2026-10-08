@@ -6,7 +6,7 @@
 #   WITH_LANGCHAIN=1 ./setup_iaiso.sh   # also install iaiso[langchain]
 #   IAISO_REPO=<url> ./setup_iaiso.sh   # override the repo URL
 set -euo pipefail
-cd "$(dirname "$0")/.."                 # smartpolicytranslator/ package dir
+cd "$(dirname "$0")/.."                 # sf-smartpolicytranslator/ package dir
 REPO="${IAISO_REPO:-https://github.com/SmartTasksOrg/IAISO.git}"
 DEST="${IAISO_DIR:-.iaiso}"
 EXTRA=""; [ "${WITH_LANGCHAIN:-0}" = "1" ] && EXTRA="[langchain]"

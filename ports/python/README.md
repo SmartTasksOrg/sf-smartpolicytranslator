@@ -8,7 +8,7 @@ Thin client that calls a running SmartPolicyTranslator service and returns the
 
 ```bash
 # from the repo root:
-cd smartpolicytranslator && bash scripts/run.sh     # → http://localhost:8000
+cd sf-smartpolicytranslator && bash scripts/run.sh     # → http://localhost:8000
 ```
 
 ## 2. Set up this port
@@ -33,12 +33,12 @@ The result's `iaiso_policy` is a schema-conformant IAIso v1 document
 
 # enforce with the real IAIso SDK:
 #   pip install iaiso
-from smartpolicytranslator.iaiso_sdk import load_as_iaiso_policy
+from sf_smartpolicytranslator.iaiso_sdk import load_as_iaiso_policy
 iaiso_policy = load_as_iaiso_policy(policy)   # IAIso's real Policy dataclass
 
 ## Notes
 
-In-process (no service) is often simpler in Python: `from smartpolicytranslator.pipeline import translate_document`.
+In-process (no service) is often simpler in Python: `from sf_smartpolicytranslator.pipeline import translate_document`.
 
 ## One-command end-to-end demo
 

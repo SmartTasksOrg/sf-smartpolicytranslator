@@ -17,7 +17,7 @@ import json
 
 
 def _translate(source: str) -> dict:
-    from smartpolicytranslator.pipeline import translate_document
+    from sf_smartpolicytranslator.pipeline import translate_document
     return translate_document(source, persist=False)
 
 

@@ -35,7 +35,7 @@ def main(argv):
     if not paths:
         print("no policy files matched", file=sys.stderr); return 1
 
-    from smartpolicytranslator import iaiso_policy as native
+    from sf_smartpolicytranslator import iaiso_policy as native
     engine = "IAIso SDK (iaiso.policy._validate)"
     if _iaiso_validate({"version": "1"}) is None:
         engine = "native validator (iaiso package not installed)"

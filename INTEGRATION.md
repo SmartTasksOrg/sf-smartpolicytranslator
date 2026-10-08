@@ -41,19 +41,19 @@ Copied verbatim from `github.com/SmartTasksOrg/IAISO`, `IAIso-v5.0/core/spec/pol
 | `POLICY_SPEC.md` | `core/spec/policy/README.md` | the normative policy specification |
 | `IAISO_VERSION` | `core/spec/VERSION` | pinned spec version |
 
-`src/smartpolicytranslator/iaiso_policy.py` implements the spec's **defaults and
+`src/sf_smartpolicytranslator/iaiso_policy.py` implements the spec's **defaults and
 validation logic** (version const, enforcement_mode enum, pressure ranges, the
 `release_threshold > escalation_threshold` cross-field rule, the consent scope
 grammar `^[a-z0-9_-]+(\.[a-z0-9_-]+)*$`) and **passes all of IAIso's vectors**
 (`run_vectors()` → 22/22). That is the integrated policy logic — dependency-free.
 
-`src/smartpolicytranslator/translator.py` is the **language conversion**: it maps
+`src/sf_smartpolicytranslator/translator.py` is the **language conversion**: it maps
 regulatory obligations onto IAIso policy fields (`enforcement_mode`, `consent`,
 `pressure`, `metadata` provenance). `private/notes/MAPPING.md` documents each rule.
 
 ## What is REFERENCED (not copied) — the IAIso runtime SDK
 
-`src/smartpolicytranslator/iaiso_sdk.py` is a **bridge** to the real `iaiso`
+`src/sf_smartpolicytranslator/iaiso_sdk.py` is a **bridge** to the real `iaiso`
 package (IAIso's `core/iaiso-python`). We deliberately do **not** vendor the SDK
 source, so this repo stays small and always tracks IAIso's real code rather than a
 stale copy. When `iaiso` is installed, the bridge does two things:

@@ -1,7 +1,7 @@
 # Language ports
 
 Each port is a thin client that calls a running SmartPolicyTranslator service
-(`uvicorn smartpolicytranslator.api:app`) and returns the **IAIso policy** it
+(`uvicorn sf_smartpolicytranslator.api:app`) and returns the **IAIso policy** it
 generates. SmartPolicyTranslator *produces* the policy; the matching **IAIso port**
 *enforces* it — so you can generate and enforce in the same language as your stack.
 

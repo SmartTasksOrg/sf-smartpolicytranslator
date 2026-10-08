@@ -15,7 +15,7 @@ if ! python3 -c "import fastapi, uvicorn" >/dev/null 2>&1; then
     exit 1; }
 fi
 export PYTHONPATH="$(pwd)/src"
-nohup uvicorn smartpolicytranslator.api:app --host 0.0.0.0 --port "$PORT" >/tmp/spt-service.log 2>&1 &
+nohup uvicorn sf_smartpolicytranslator.api:app --host 0.0.0.0 --port "$PORT" >/tmp/spt-service.log 2>&1 &
 echo $! > .spt.pid
 for i in $(seq 1 40); do
   curl -sf "http://localhost:${PORT}/health" >/dev/null 2>&1 && { echo "service up on :${PORT} (pid $(cat .spt.pid))"; exit 0; }

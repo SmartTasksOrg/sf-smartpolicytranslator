@@ -8,7 +8,7 @@ Thin client that calls a running SmartPolicyTranslator service and returns the
 
 ```bash
 # from the repo root:
-cd smartpolicytranslator && bash scripts/run.sh     # → http://localhost:8000
+cd sf-smartpolicytranslator && bash scripts/run.sh     # → http://localhost:8000
 ```
 
 ## 2. Set up this port

@@ -1,4 +1,4 @@
-"""FastAPI service. Run: uvicorn smartpolicytranslator.api:app --port 8000"""
+"""FastAPI service. Run: uvicorn sf_smartpolicytranslator.api:app --port 8000"""
 from __future__ import annotations
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -16,7 +16,7 @@ class Body(BaseModel):
     use_llm: bool = False
     provider: str = "lmstudio"
     model: str | None = None
-    issuer: str = "smartpolicytranslator"
+    issuer: str = "sf-smartpolicytranslator"
 
 
 @app.get("/health")

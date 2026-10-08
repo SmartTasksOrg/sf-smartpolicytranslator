@@ -10,7 +10,7 @@ import argparse, glob, json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "src"))
-from smartpolicytranslator.pipeline import translate_document
+from sf_smartpolicytranslator.pipeline import translate_document
 
 
 def main():

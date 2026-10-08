@@ -7,7 +7,7 @@ from .translator import translate
 from . import audit
 
 
-def translate_document(source, *, use_llm=False, llm=None, issuer="smartpolicytranslator",
+def translate_document(source, *, use_llm=False, llm=None, issuer="sf-smartpolicytranslator",
                        persist=True) -> dict:
     text = extract_text(source)
     clauses = parse_clauses(text, use_llm=use_llm, llm=llm)
