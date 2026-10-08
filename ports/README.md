@@ -5,9 +5,9 @@ Each port is a thin client that calls a running SmartPolicyTranslator service
 generates. SmartPolicyTranslator *produces* the policy; the matching **IAIso port**
 *enforces* it — so you can generate and enforce in the same language as your stack.
 
-| Port | Path | Enforce with (IAIso) |
+| Port | Path | Enforce with (IAIso SDK folder in `IAIso-v5.0/core/`, from source; not published on a registry yet) |
 |---|---|---|
-| Python | `python/spt_client.py` (remote) · `../src/` (in-process) | `iaiso` (pip) |
+| Python | `python/spt_client.py` (remote) · `../src/` (in-process) | `iaiso-python` |
 | Node / TypeScript | `node/` | `iaiso-node` |
 | React | `react/` (uses the Node client) | `iaiso-node` |
 | Java | `java/` | `iaiso-java` |

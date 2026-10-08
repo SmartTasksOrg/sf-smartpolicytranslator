@@ -35,12 +35,14 @@ The result's `iaiso_policy` is a schema-conformant IAIso v1 document
 ## 4. Enforce the policy with IAIso
 
 // enforce with the IAIso Node port:
-//   npm install iaiso-node
-// feed res.iaiso_policy into iaiso-node's BoundedExecution / callback handler.
+//   enforce with the IAIso Node SDK from source (IAISO repository,
+//   IAIso-v5.0/core/iaiso-node); it is not published on npm yet.
+// feed res.iaiso_policy into the IAIso Node SDK's BoundedExecution / callback handler.
 
 ## Notes
 
-Peer dependency `iaiso-node` is only needed for enforcement, not for translation.
+The IAIso Node SDK (IAISO repository, `IAIso-v5.0/core/iaiso-node`, from source) is only
+needed for enforcement, not for translation. This package declares no dependency on it.
 
 ## One-command end-to-end demo
 
