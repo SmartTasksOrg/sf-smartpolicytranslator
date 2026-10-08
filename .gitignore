@@ -1,0 +1,28 @@
+# build output
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# secrets and credentials never belong in the repository
+.secret/
+.secure/
+secrets.env
+*.env
+.env
+.env.*
+!.env.example
+.npmrc
+.pypirc
+.netrc
+_netrc
+id_rsa*
+id_ed25519*
+*.key
+*.pem
+*.p12
+*.pfx
