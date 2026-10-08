@@ -5,4 +5,4 @@ source .venv/bin/activate
 pip install -q -r requirements.txt
 export PYTHONPATH="$(pwd)/src"
 echo "SmartPolicyTranslator → http://localhost:8000/docs"
-uvicorn smartpolicytranslator.api:app --reload --port 8000
+uvicorn sf_smartpolicytranslator.api:app --reload --port 8000

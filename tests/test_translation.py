@@ -4,9 +4,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "src"))
 os.environ["SPT_SQLITE_PATH"] = os.path.join(os.path.dirname(__file__), "_t.db")
 
-from smartpolicytranslator.pipeline import translate_document
-from smartpolicytranslator.parser import parse_clauses
-from smartpolicytranslator import iaiso_policy
+from sf_smartpolicytranslator.pipeline import translate_document
+from sf_smartpolicytranslator.parser import parse_clauses
+from sf_smartpolicytranslator import iaiso_policy
 
 SAMPLE = os.path.join(ROOT, "examples", "sample_regulation.txt")
 

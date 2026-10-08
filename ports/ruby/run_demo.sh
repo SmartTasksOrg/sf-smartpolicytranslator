@@ -7,7 +7,7 @@
 #   SETUP_IAISO=0 ./run_demo.sh   # skip IAIso checkout (validate falls back to native)
 set -euo pipefail
 cd "$(dirname "$0")"
-PKG="$(cd ../.. && pwd)"                       # smartpolicytranslator/ package dir
+PKG="$(cd ../.. && pwd)"                       # sf-smartpolicytranslator/ package dir
 DS="$PKG/examples/dataset"
 OUT="$(pwd)/out"; mkdir -p "$OUT"
 
