@@ -15,9 +15,11 @@ cd smartpolicytranslator && bash scripts/run.sh     # → http://localhost:8000
 
 ```bash
 cd ports/react
-npm install react @smarttasks/smartpolicytranslator-client
+npm install react
 ```
-(Build the `node` port first — this component imports its client.)
+The client (`@smarttasks/smartpolicytranslator-client`) is not published on npm yet:
+build it from `ports/node` in a clone (`npm install && npm run build`) and install it
+by path (`npm install ../node`).
 
 ## 3. Translate regulation → IAIso policy
 
@@ -34,7 +36,7 @@ The result's `iaiso_policy` is a schema-conformant IAIso v1 document
 
 ## 4. Enforce the policy with IAIso
 
-Enforcement is server-side; the component only displays the generated IAIso policy. Wire enforcement in your backend via `iaiso-node`.
+Enforcement is server-side; the component only displays the generated IAIso policy. Wire enforcement in your backend via the IAIso Node SDK (IAISO repository, `IAIso-v5.0/core/iaiso-node`, from source; not on npm yet).
 
 ## Notes
 

@@ -8,7 +8,7 @@ A custom Tool node that returns the IAIso policy to a Flowise agent.
 # in your Flowise custom-tools/components directory:
 npm install flowise-components typescript --save-dev
 # copy SmartPolicyTranslator_Flowise.ts into your components folder and build:
-npx tsc SmartPolicyTranslator_Flowise.ts
+npx -p typescript tsc SmartPolicyTranslator_Flowise.ts
 # restart Flowise so it picks up the new tool
 ```
 

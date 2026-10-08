@@ -34,7 +34,8 @@ The result's `iaiso_policy` is a schema-conformant IAIso v1 document
 ## 4. Enforce the policy with IAIso
 
 // enforce with the IAIso Go port (iaiso-go):
-//   go get github.com/SmartTasksOrg/... (core/iaiso-go)
+//   the IAIso Go SDK is not published yet; see IAIso-v5.0/core/iaiso-go
+//   in the IAISO repository.
 // pass the iaiso_policy map to iaiso-go's execution guard.
 
 ## Notes
