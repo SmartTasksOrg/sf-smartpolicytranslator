@@ -26,3 +26,6 @@ id_ed25519*
 *.pem
 *.p12
 *.pfx
+
+# binary from `go build` in ports/go (the module path ends in /go)
+ports/go/go

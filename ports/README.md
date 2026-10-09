@@ -1,7 +1,7 @@
 # Language ports
 
 Each port is a thin client that calls a running SmartPolicyTranslator service
-(`uvicorn smartpolicytranslator.api:app`) and returns the **IAIso policy** it
+(`uvicorn sf_smartpolicytranslator.api:app`) and returns the **IAIso policy** it
 generates. SmartPolicyTranslator *produces* the policy; the matching **IAIso port**
 *enforces* it — so you can generate and enforce in the same language as your stack.
 
@@ -24,7 +24,7 @@ IAIso's own ports live at `github.com/SmartTasksOrg/IAISO` → `IAIso-v5.0/core/
 This set covers every language IAIso ships, plus React and C/C++.
 
 ## Quick starts
-- **Go:** `import spt "github.com/SmartTasksOrg/smartpolicytranslator-go"` → `spt.New("").Translate(text, false, "lmstudio")`
+- **Go:** `import spt "github.com/SmartTasksOrg/sf-smartpolicytranslator/ports/go"` → `spt.New("").Translate(text, false, "lmstudio")`
 - **PHP:** `new SmartTasks\Spt\SptClient()->translate($text)` (needs ext-curl)
 - **Ruby:** `SmartTasks::SptClient.new.translate(text)`
 - **Rust:** `SptClient::new("").translate(text, false, "lmstudio")`

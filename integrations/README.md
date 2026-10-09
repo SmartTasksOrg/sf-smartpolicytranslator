@@ -9,7 +9,7 @@ two into a company's architecture.
 | n8n | `n8n/SmartPolicyTranslator.node.ts` | community node calling the REST service. |
 | Flowise | `flowise/SmartPolicyTranslator_Flowise.ts` | tool node returning the IAIso policy. |
 | Language ports | `../ports/{node,react,java,go,php,ruby,rust,csharp,swift,c,cpp}` | client per language; each pairs with the matching `iaiso-*` port. See `../ports/README.md`. |
-| LM Studio / Ollama / llama.cpp | `../src/smartpolicytranslator/llm.py` | one OpenAI-compatible client for optional semantic parsing. |
+| LM Studio / Ollama / llama.cpp | `../src/sf_smartpolicytranslator/llm.py` | one OpenAI-compatible client for optional semantic parsing. |
 
 IAIso itself ships ports in Python, Node, Java, Go, PHP, Ruby, Rust, C#, and Swift
 (github.com/SmartTasksOrg/IAISO, `IAIso-v5.0/core/`). Our ports mirror that set so a

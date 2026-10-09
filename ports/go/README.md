@@ -8,7 +8,7 @@ Thin client that calls a running SmartPolicyTranslator service and returns the
 
 ```bash
 # from the repo root:
-cd smartpolicytranslator && bash scripts/run.sh     # → http://localhost:8000
+cd sf-smartpolicytranslator && bash scripts/run.sh     # → http://localhost:8000
 ```
 
 ## 2. Set up this port
@@ -21,7 +21,7 @@ go mod tidy
 ## 3. Translate regulation → IAIso policy
 
 ```go
-import spt "github.com/SmartTasksOrg/smartpolicytranslator-go"
+import spt "github.com/SmartTasksOrg/sf-smartpolicytranslator/ports/go"
 
 c := spt.New("http://localhost:8000")
 res, err := c.Translate("Personal data must be redacted.", false, "lmstudio")

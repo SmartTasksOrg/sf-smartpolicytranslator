@@ -1,6 +1,6 @@
 """Thin remote Python client for SmartPolicyTranslator (stdlib only).
 
-The engine itself is Python (../../src/smartpolicytranslator) — import that for
+The engine itself is Python (../../src/sf_smartpolicytranslator) — import that for
 in-process use. This client is for calling a *running* SPT service over HTTP,
 matching the other language ports."""
 from __future__ import annotations

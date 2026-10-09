@@ -1,4 +1,4 @@
-"""python -m smartpolicytranslator.cli examples/sample_regulation.txt [--llm --provider ollama]"""
+"""python -m sf_smartpolicytranslator.cli examples/sample_regulation.txt [--llm --provider ollama]"""
 from __future__ import annotations
 import argparse, json, sys
 from .pipeline import translate_document
@@ -9,7 +9,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="SmartPolicyTranslator — regulation -> IAIso policy")
     ap.add_argument("source"); ap.add_argument("--llm", action="store_true")
     ap.add_argument("--provider", default="lmstudio", choices=["lmstudio", "ollama", "llamacpp"])
-    ap.add_argument("--model", default=None); ap.add_argument("--issuer", default="smartpolicytranslator")
+    ap.add_argument("--model", default=None); ap.add_argument("--issuer", default="sf-smartpolicytranslator")
     ap.add_argument("--no-persist", action="store_true")
     a = ap.parse_args(argv)
     llm = LLM(provider=a.provider, model=a.model) if a.llm else None

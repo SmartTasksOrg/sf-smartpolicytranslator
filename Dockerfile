@@ -6,4 +6,4 @@ COPY . .
 ENV PYTHONPATH=/app/src SPT_SQLITE_PATH=/data/spt.db
 VOLUME ["/data"]
 EXPOSE 8000
-CMD ["uvicorn", "smartpolicytranslator.api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "sf_smartpolicytranslator.api:app", "--host", "0.0.0.0", "--port", "8000"]

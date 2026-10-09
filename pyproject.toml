@@ -1,10 +1,29 @@
 [project]
-name = "smartpolicytranslator"
+name = "sf-smartpolicytranslator"
 version = "1.0.0"
 description = "Translate natural-language regulation into REAL, schema-conformant IAIso policy files."
 requires-python = ">=3.10"
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
+readme = "README.md"
+license-files = ["LICENSE", "NOTICE"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/SmartTasksOrg/smartpolicytranslator"
+Source = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator"
+Issues = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator/issues"
+Security = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator/security/policy"
+Changelog = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator/blob/main/CHANGELOG.md"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
