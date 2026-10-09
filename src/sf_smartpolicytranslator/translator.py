@@ -53,7 +53,7 @@ def _obligations_for(text: str) -> list[str]:
     return [ob for ob, kws in _OBLIGATION_PATTERNS.items() if any(k in low for k in kws)]
 
 
-def translate_to_iaiso_policy(clauses, *, issuer="smartpolicytranslator",
+def translate_to_iaiso_policy(clauses, *, issuer="sf-smartpolicytranslator",
                               source="") -> dict:
     provenance, all_obl, scopes = [], set(), set()
     for c in clauses:
@@ -105,7 +105,7 @@ def translate_to_iaiso_policy(clauses, *, issuer="smartpolicytranslator",
     return policy
 
 
-def translate(clauses, *, issuer="smartpolicytranslator", source="") -> dict:
+def translate(clauses, *, issuer="sf-smartpolicytranslator", source="") -> dict:
     """Return {policy, valid, errors, normalized}. `policy` is the emitted IAIso
     document; `normalized` has spec defaults applied."""
     policy = translate_to_iaiso_policy(clauses, issuer=issuer, source=source)

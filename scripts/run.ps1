@@ -4,4 +4,4 @@ if (-not (Test-Path .venv)) { python -m venv .venv }
 pip install -q -r requirements.txt
 $env:PYTHONPATH = "$(Get-Location)\src"
 Write-Host "SmartPolicyTranslator -> http://localhost:8000/docs"
-uvicorn smartpolicytranslator.api:app --reload --port 8000
+uvicorn sf_smartpolicytranslator.api:app --reload --port 8000
