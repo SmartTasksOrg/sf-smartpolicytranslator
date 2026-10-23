@@ -22,8 +22,12 @@ passes **all of IAIso's own policy test vectors**.
 
 ```bash
 python -m pip install sf-smartpolicytranslator
-python -m sf_smartpolicytranslator.cli regulation.txt   # a plain-text regulation
+sf-smartpolicytranslator --demo                  # translates a bundled sample regulation
+sf-smartpolicytranslator regulation.txt          # your own: a text, PDF or DOCX file, a URL, or the text itself
 ```
+
+The sample regulation is a short synthetic text written for the demo (the same as
+`examples/sample_regulation.txt`), not a real law. `--demo` saves nothing.
 
 Every file of `sf-smartpolicytranslator` on PyPI is built and published by this repository's release
 workflow (`.github/workflows/release.yml`, PyPI trusted publishing) and carries a
@@ -44,14 +48,14 @@ cd sf-smartpolicytranslator
 python -m venv .venv
 . .venv/bin/activate          # Windows PowerShell: .\.venv\Scripts\Activate.ps1
 python -m pip install .
-python -m sf_smartpolicytranslator.cli examples/sample_regulation.txt
+sf-smartpolicytranslator --demo
 ```
 
 ## Status
 
-- **Version 1.0.0, experimental.** Translates regulation text into IAIso v1 policy files that are validated against the IAIso schema and test vectors vendored in `spec/iaiso/`; 4 tests.
+- **Version 1.0.0, experimental.** Translates regulation text into IAIso v1 policy files that are validated against the IAIso schema and test vectors vendored in `spec/iaiso/`; 10 tests. The `sf-smartpolicytranslator` command is not in the 1.0.0 release on PyPI yet: until the next release, use `python -m sf_smartpolicytranslator.cli` there.
 - **Published:** PyPI `sf-smartpolicytranslator` (see Install). Nothing else is published. From a PyPI install the command line validates with the built-in validator; the JSON-Schema check, `run_vectors()` and the API's `/iaiso/schema` read `spec/iaiso/`, which is not in the wheel yet, so they need a clone.
-- **Tested:** the 4 tests in `tests/` on Python 3.12, Linux, on every push to main and every pull request (`.github/workflows/ci.yml`).
+- **Tested:** the 10 tests in `tests/` on Python 3.12, Linux, on every push to main and every pull request (`.github/workflows/ci.yml`).
 - **Not tested:** Windows and macOS; the LLM-assisted parsing path; Python versions other than 3.12.
 - **Ports:** The client ports in `ports/` have no automated check; none is published on a registry.
 - **Security review:** none independent. Report vulnerabilities as described in [SECURITY.md](SECURITY.md).

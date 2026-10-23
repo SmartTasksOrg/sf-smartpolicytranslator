@@ -7,6 +7,10 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+.venv-*/
+# the audit database the command line writes when it persists a policy
+spt.db
+tests/_t.db
 
 # secrets and credentials never belong in the repository
 .secret/
