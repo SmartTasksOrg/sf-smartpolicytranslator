@@ -2,6 +2,24 @@
 
 ## Unreleased
 
+### Added
+- `sf-smartpolicytranslator` command (`[project.scripts]`), like every other Smart* tool, and
+  `python -m sf_smartpolicytranslator`.
+- `--demo`: translates a bundled sample regulation (`sf_smartpolicytranslator/data/sample_regulation.txt`,
+  the same synthetic text as `examples/sample_regulation.txt`) with no input file, and saves nothing.
+  `--version`.
+- `tests/test_cli.py` (6 tests); CI also installs the wheel and runs `sf-smartpolicytranslator --demo`
+  from an empty folder.
+
+### Changed
+- The command line exits 1 when the policy fails validation, and exits 2 with a usage message when it is
+  given no input (it used to fail with an argparse error naming `source` only).
+
+### Removed
+- `.venv-iaiso/`: a local Windows virtual environment (two executables and a `pyvenv.cfg` with a local
+  path) that had been committed by mistake. `.gitignore` now excludes `.venv-*/`, `spt.db` and
+  `tests/_t.db`.
+
 ### Documentation
 - README "Install": `pip install sf-smartpolicytranslator` now that the first release is on PyPI, with how to check its provenance;
   "Status" says where it is published. `names.json` marks `sf-smartpolicytranslator` as registered.

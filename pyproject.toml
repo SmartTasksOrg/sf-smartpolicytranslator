@@ -19,10 +19,16 @@ Source = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator"
 Issues = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator/issues"
 Security = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator/security/policy"
 Changelog = "https://github.com/SmartTasksOrg/sf-smartpolicytranslator/blob/main/CHANGELOG.md"
+[project.scripts]
+sf-smartpolicytranslator = "sf_smartpolicytranslator.cli:main"
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+sf_smartpolicytranslator = ["data/*.txt"]
 
 [build-system]
 requires = ["setuptools>=77"]
