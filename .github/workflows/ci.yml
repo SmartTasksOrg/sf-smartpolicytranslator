@@ -25,6 +25,11 @@ jobs:
         run: python -m pip install pytest
       - name: Tests
         run: python -m pytest tests/ -q
+      - name: The command from the installed wheel, run from an empty folder
+        run: |
+          python -m pip install .
+          cd "$RUNNER_TEMP"
+          sf-smartpolicytranslator --demo > /dev/null
 
   install-lines:
     runs-on: ubuntu-latest
