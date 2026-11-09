@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.1.0
 
 ### Added
 - `sf-smartpolicytranslator` command (`[project.scripts]`), like every other Smart* tool, and

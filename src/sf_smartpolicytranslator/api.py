@@ -7,7 +7,7 @@ from .llm import LLM
 from . import audit
 from .iaiso_policy import load_schema, run_vectors
 
-app = FastAPI(title="SmartPolicyTranslator", version="1.0.0",
+app = FastAPI(title="SmartPolicyTranslator", version="1.1.0",
               description="Translate regulation into REAL IAIso policy files.")
 
 
