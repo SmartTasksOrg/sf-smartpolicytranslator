@@ -1,6 +1,6 @@
 [project]
 name = "sf-smartpolicytranslator"
-version = "1.0.0"
+version = "1.1.0"
 description = "Translate natural-language regulation into REAL, schema-conformant IAIso policy files."
 requires-python = ">=3.10"
 license = "Apache-2.0"

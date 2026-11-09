@@ -53,7 +53,7 @@ sf-smartpolicytranslator --demo
 
 ## Status
 
-- **Version 1.0.0, experimental.** Translates regulation text into IAIso v1 policy files that are validated against the IAIso schema and test vectors vendored in `spec/iaiso/`; 10 tests. The `sf-smartpolicytranslator` command is not in the 1.0.0 release on PyPI yet: until the next release, use `python -m sf_smartpolicytranslator.cli` there.
+- **Version 1.1.0, experimental.** Translates regulation text into IAIso v1 policy files that are validated against the IAIso schema and test vectors vendored in `spec/iaiso/`; 10 tests. The `sf-smartpolicytranslator` command and `--demo` are in 1.1.0 and later; the 1.0.0 release did not have them.
 - **Published:** PyPI `sf-smartpolicytranslator` (see Install). Nothing else is published. From a PyPI install the command line validates with the built-in validator; the JSON-Schema check, `run_vectors()` and the API's `/iaiso/schema` read `spec/iaiso/`, which is not in the wheel yet, so they need a clone.
 - **Tested:** the 10 tests in `tests/` on Python 3.12, Linux, on every push to main and every pull request (`.github/workflows/ci.yml`).
 - **Not tested:** Windows and macOS; the LLM-assisted parsing path; Python versions other than 3.12.
