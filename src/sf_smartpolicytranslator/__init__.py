@@ -6,5 +6,5 @@ them against the vendored IAIso specification and its official test vectors, and
 ships integrations (LangChain via the IAIso SDK, n8n, Flowise) plus language
 ports (Node, Java, React) that mirror IAIso's own multi-language ports.
 """
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 FRAMEWORK = "IAIso"
